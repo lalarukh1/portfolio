@@ -24,7 +24,7 @@ export default function AboutPage() {
             <h1 className="text-4xl md:text-5xl font-medium mb-16">About</h1>
 
             <section className="mb-16">
-              <div className="flex gap-12 items-start">
+              <div className="flex flex-col-reverse md:flex-row gap-12 items-start">
                 <div className="flex-1">
                   <p className="text-foreground text-xl leading-relaxed mb-6">
                     I'm a UX designer and frontend developer with 8 years of
