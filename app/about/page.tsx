@@ -4,8 +4,8 @@ import SiteNav from "@/components/SiteNav";
 import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = {
-  title: "About | Lala Rukh",
-  description: "About Lala Rukh, UX designer.",
+  title: "About | Lala Rukh — UX Designer",
+  description: "UX designer and frontend developer with 8 years of experience in EdTech. Specialising in interaction design, UX audits, information architecture, and Figma-to-code handoff.",
 };
 
 export default function AboutPage() {
@@ -42,7 +42,7 @@ export default function AboutPage() {
                     built it myself.
                   </p>
                   <p className="text-foreground text-xl leading-relaxed">
-                    Currently open to fractional UX partnerships with EdTech teams. Get in touch at{" "}
+                    Currently open to embedded UX partnerships with EdTech teams. Get in touch at{" "}
                     <a
                       href="mailto:lalarukh.1992@outlook.com"
                       className="text-foreground border-b border-muted hover:border-foreground transition-colors duration-200"

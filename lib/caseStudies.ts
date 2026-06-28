@@ -19,7 +19,7 @@ export const caseStudies: CaseStudy[] = [
       "Edurio is a school evaluation platform used by 3,000+ schools across Europe. Over 18 months I redesigned four interconnected parts of the platform: survey discovery and management, the survey design and collaboration experience, the respondent mobile journey, and the survey launch flow. The work resulted in a 2x increase in survey usage after launch.",
     ],
     year: "2025",
-    role: "Fractional UX Designer",
+    role: "UX Designer",
   },
   {
     slug: "tap",
@@ -30,7 +30,7 @@ export const caseStudies: CaseStudy[] = [
       "A trust assessment platform built by a product team using AI-assisted tools, without a UX designer. The team considered the screens close to final. I conducted a full UX audit, expanded the scope with team agreement, and redesigned the product around the actual job trust users come to do.",
     ],
     year: "2025",
-    role: "Fractional UX Designer",
+    role: "UX Designer",
   },
   {
     slug: "gcsepod",

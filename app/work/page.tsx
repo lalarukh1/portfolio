@@ -5,8 +5,8 @@ import SiteFooter from "@/components/SiteFooter";
 import { caseStudies } from "@/lib/caseStudies";
 
 export const metadata = {
-  title: "Work | Lala Rukh",
-  description: "Selected case studies in UX and product design.",
+  title: "Work | Lala Rukh — UX Designer",
+  description: "Case studies in UX design, interaction design, and design systems for EdTech SaaS products used across the UK and Europe.",
 };
 
 export default function WorkPage() {
