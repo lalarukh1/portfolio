@@ -1,36 +1,67 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# UX Portfolio
 
-## Getting Started
+A password-protected UX portfolio built with Next.js and Tailwind CSS. Dark, editorial, minimal — designed to let the work speak.
 
-First, run the development server:
+## What this is
+
+- A home page with a short intro and links to Work and About
+- A Work index listing case studies
+- Individual case study pages, each behind a password gate
+- An About page
+- Password protection via `sessionStorage` — correct entry persists for the browser session, no re-entry needed between pages
+
+## Running locally
+
+**1. Clone and install**
+
+```bash
+git clone <your-repo-url>
+cd portfolio
+npm install
+```
+
+**2. Set up environment variables**
+
+```bash
+cp .env.example .env.local
+```
+
+Open `.env.local` and set `NEXT_PUBLIC_PORTFOLIO_PASSWORD` to whatever password you want visitors to use.
+
+**3. Start the dev server**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Replacing placeholder content
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All placeholder text is marked clearly. To update:
 
-## Learn More
+| What to change | Where |
+|---|---|
+| Your name, positioning statement, intro | `app/page.tsx` |
+| Case study list and metadata | `lib/caseStudies.ts` |
+| Case study body content | `app/work/[slug]/content/*.tsx` |
+| Bio and contact email | `app/about/page.tsx` |
+| Site metadata (`<title>`, description) | `app/layout.tsx` and each page's `metadata` export |
 
-To learn more about Next.js, take a look at the following resources:
+To add image screenshots, replace the `<ImagePlaceholder>` components with `<Image>` from `next/image`. Each placeholder has a descriptive `label` prop so you know exactly which screenshot goes where.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To add a new case study:
+1. Add an entry to `lib/caseStudies.ts`
+2. Create a content component in `app/work/[slug]/content/`
+3. Register it in the `contentBySlug` map in `app/work/[slug]/page.tsx`
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deploying
 
-## Deploy on Vercel
+The easiest option is [Vercel](https://vercel.com). Connect your repository and add `NEXT_PUBLIC_PORTFOLIO_PASSWORD` as an environment variable in the Vercel project settings.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+# Build locally to check for errors before deploying
+npm run build
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Any static hosting that supports Next.js will work: Vercel, Netlify, Railway, or self-hosted with `npm run start`.
