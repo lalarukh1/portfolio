@@ -21,7 +21,7 @@ export default function HomePage() {
               UX Designer · EdTech · 8 years across design and frontend
             </p>
             <p className="text-foreground text-xl leading-relaxed mb-12">
-              I help EdTech teams ship better product experiences, from research and information architecture through to dev handoff-ready UI. I've worked embedded in teams building GCSE learning platforms and school and trust evaluation tools used across Europe, with results including a 2x increase in survey usage after launch.
+              I help EdTech teams ship better product experiences, from research and information architecture through to dev handoff-ready UI. I've worked embedded in teams building GCSE learning platforms and school and trust evaluation tools used across Europe.
             </p>
             <Link
               href="/work"
