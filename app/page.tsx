@@ -4,7 +4,7 @@ import SiteNav from "@/components/SiteNav";
 
 export const metadata: Metadata = {
   title: "Lala Rukh — UX Designer",
-  description: "UX designer with 8 years across design and frontend, specialising in EdTech product experiences. Interaction design, information architecture, Figma, and dev handoff.",
+  description: "UX designer with 6 years across design and frontend, specialising in EdTech product experiences. Interaction design, information architecture, Figma, and dev handoff.",
 };
 
 export default function HomePage() {
@@ -18,7 +18,7 @@ export default function HomePage() {
               Lala Rukh
             </h1>
             <p className="text-muted text-lg mb-10 tracking-wide">
-              UX Designer · EdTech · 8 years across design and frontend
+              UX Designer · EdTech · 6 years across design and frontend
             </p>
             <p className="text-foreground text-xl leading-relaxed mb-12">
               I help EdTech teams ship better product experiences, from research and information architecture through to dev handoff-ready UI. I've worked embedded in teams building GCSE learning platforms and school and trust evaluation tools used across Europe.

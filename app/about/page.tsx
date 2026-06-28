@@ -5,7 +5,7 @@ import SiteFooter from "@/components/SiteFooter";
 
 export const metadata = {
   title: "About | Lala Rukh — UX Designer",
-  description: "UX designer and frontend developer with 8 years of experience in EdTech. Specialising in interaction design, UX audits, information architecture, and Figma-to-code handoff.",
+  description: "UX designer and frontend developer with 6 years of experience in EdTech. Specialising in interaction design, UX audits, information architecture, and Figma-to-code handoff.",
 };
 
 export default function AboutPage() {
@@ -27,7 +27,7 @@ export default function AboutPage() {
               <div className="flex flex-col-reverse md:flex-row gap-12 items-start">
                 <div className="flex-1">
                   <p className="text-foreground text-xl leading-relaxed mb-6">
-                    I'm a UX designer and frontend developer with 8 years of
+                    I'm a UX designer and frontend developer with 6 years of
                     experience working at the intersection of design and engineering,
                     mostly in EdTech. I've spent that time designing products for
                     teachers, school leaders, and students: learning platforms,
