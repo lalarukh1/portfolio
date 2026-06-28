@@ -14,6 +14,10 @@ export default function HomePage() {
       <main className="flex-1 flex items-center px-6 md:px-12 lg:px-20">
         <div className="max-w-5xl mx-auto w-full">
           <section className="max-w-2xl">
+            <div className="flex items-center gap-2 mb-6">
+              <span className="w-2 h-2 rounded-full bg-green-500 inline-block"></span>
+              <span className="text-xs uppercase tracking-widest text-muted">Available</span>
+            </div>
             <h1 className="text-5xl md:text-6xl font-medium leading-tight mb-8">
               Lala Rukh
             </h1>
