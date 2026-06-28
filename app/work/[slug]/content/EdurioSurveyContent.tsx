@@ -539,6 +539,13 @@ export default function EdurioSurveyContent() {
           library first so everything that followed was consistent by default.
           Screens were built from components, not the other way around.
         </p>
+        <p className="text-foreground leading-relaxed mb-6">
+          Each week I presented progress to stakeholders, walked through the
+          reasoning behind my decisions, and took their feedback into the next
+          iteration. Once we were aligned I produced a final design and a
+          separate dev-ready version with full annotations, specs, and component
+          documentation ready for build.
+        </p>
         <p className="text-foreground leading-relaxed">
           Where it helped I created interactive prototypes for testing or
           stakeholder sign-off. Before handing anything to developers I
